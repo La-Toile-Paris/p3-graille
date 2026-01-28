@@ -5,3 +5,11 @@ html {
 body{
   background-color: antiquewhite;
 }
+style{@import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Rock+Salt&display=swap'; )}
+
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive; }
+.b612-mono-regular {
+  font-family: "B612 Mono", monospace;}
+
+  
