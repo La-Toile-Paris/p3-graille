@@ -1,15 +1,60 @@
-html {
-  height: 100%;
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Rock+Salt&display=swap');
+
+html, body {
+  margin: 0;
+    height: 100%;
+    width: 100%;
 }
-body{
-  
+
+ul{
+  margin: 0;
 }
-style{@import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Rock+Salt&display=swap'; )}
 
 .rock-salt-regular {
   font-family: "Rock Salt", cursive; }
 .b612-mono-regular {
   font-family: "B612 Mono", monospace;}
 
-  
+body {
+  font-family: "B612 Mono", monospace;
+}
+
+h1 {
+  font-family: "Rock Salt", cursive;
+  font-size: 3rem; 
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 8vw;
+  height: 15vh;
+  background-color: #64A225;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px; 
+}
+
+.bouton {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 15px 25px;
+  font-size: 16px; 
+  font-family: "B612 Mono", monospace;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.bouton:hover {
+  background-color: #d2691e;
+  transform: scale(1.1); 
+}
