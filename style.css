@@ -1,20 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Rock+Salt&display=swap');
 
-/* Variables */
+/* ===========================================
+   Variables globales (centralisées)
+   =========================================== */
 :root {
-  --color-primary: #64A225;
-  --color-hover: #d2691e;
+  /* Couleurs */
+  --color-primary: #64a225;
+  --color-hover: #ED5F11;
+  --color-accent: #ff3d2e;
+  --color-accent-dark: #c91f1f;
+  --color-black: #000;
+  --color-white: #fff;
+
+  /* Typographie */
   --font-mono: "B612 Mono", monospace;
   --font-cursive: "Rock Salt", cursive;
+
+  /* Espacements et rayons */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
 }
 
 /* Reset & Base */
-html,
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   height: 100%;
   width: 100%;
   font-family: var(--font-mono);
+  overflow-x: hidden;
 }
 
 ul {
@@ -26,15 +48,6 @@ h1 {
   font-size: 2.8rem;
   text-align: center;
   letter-spacing: 3px;
-}
-
-/* Utility classes */
-.rock-salt-regular {
-  font-family: var(--font-cursive);
-}
-
-.b612-mono-regular {
-  font-family: var(--font-mono);
 }
 
 /* Navigation */
@@ -52,55 +65,59 @@ nav h1 {
 }
 
 nav a {
-  color: black;
+  color: var(--color-black);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+nav a:hover {
+  font-weight: bold;
 }
 
 /* Buttons */
-.bouton {
-  background-color: black;
-  color: white;
+.btn {
+  background-color: var(--color-black);
+  color: var(--color-white);
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   padding: 15px 25px;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: var(--font-mono);
   cursor: pointer;
   width: fit-content;
   transition: all 0.3s ease;
 }
 
-.bouton:hover {
+.btn:hover {
   background-color: var(--color-hover);
-  transform: scale(1.1);
 }
 
 
 /* ===========================================
-   Footer (override style.css)
+   Footer
    =========================================== */
 footer {
-  background-color: #64A225;
-  color: black;
-  padding: 3rem 2rem 2rem;
+  color: var(--color-black);
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
   text-align: center;
 }
 
-footer #telechargement h2 {
+footer #download h2 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-sm);
 }
 
-footer .telechargement h4 {
+footer h4 {
+  margin: 0;
+  font-size: 2em;
   font-family: var(--font-cursive);
-  color: black; /* ou votre couleur de marque */
+  color: var(--color-primary);
 }
 
 footer .store-badges {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: var(--spacing-sm);
   margin-top: 1.5rem;
 }
 
@@ -113,16 +130,23 @@ footer .store-badges a:hover img {
   transform: scale(1.05);
 }
 
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
 /* Icônes réseaux sociaux uniformes */
 
-footer .social-links ul {
+footer ul.social-links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: var(--spacing-md) 0;
 }
 
 footer .social-links a {
@@ -133,12 +157,12 @@ footer .social-links a {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  color: black;
+  color: var(--color-black);
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 footer .social-links a:hover {
-  background-color: #4CAF50; /* ou votre couleur de marque */
+  background-color: var(--color-primary);
   transform: translateY(-3px);
 }
 
@@ -153,18 +177,17 @@ footer .copyright {
   opacity: 0.7;
 }
 
-
 /* Download section */
-#telechargement {
+#download {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: fit-content;
-  padding: 2vw;
+  padding: var(--spacing-md);
   background-color: var(--color-primary);
 }
 
-.telechargement {
+.download-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,6 +196,6 @@ footer .copyright {
   margin-top: 6vh;
 }
 
-.Télécharger {
+.download-badge {
   width: 130px;
 }
