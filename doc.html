@@ -25,112 +25,145 @@
     </header>
 
     <main>
-      <h1>POURQUOI CETTE APPLICATION</h1>
-
-      <article id="structuration">
-        <div class="content-box">
-          <img src="asset/image/graphique 2.jpg" alt="Graphique coût de la vie" class="img-medium" />
-          <p>Selon une enquête de l'Union nationale des étudiants de France (Unef), parue en août 2023, le coût de la vie étudiante a augmenté de 6,47 %.</p>
-          <img src="asset/image/image tableau.png" alt="Tableau aide alimentaire" class="img-medium" />
-          <p>Selon le Baromètre annuel Cop1 et IFOP, 20% des étudiant·es ont déjà eu recours à l'aide alimentaire.</p>
+      <section id="why">
+        <h2 class="rock-salt-regular">Pourquoi cette application ?</h2>
+        <div class="stats-grid">
+          <div class="stat-card" data-aos="fade-up">
+            <img src="asset/image/graphique 2.jpg" alt="Graphique coût de la vie" />
+            <div class="stat-content">
+              <span class="stat-number">+6,47%</span>
+              <p>Augmentation du coût de la vie étudiante en 2023 selon l'UNEF</p>
+            </div>
+          </div>
+          <div class="stat-card" data-aos="fade-up">
+            <img src="asset/image/image tableau.png" alt="Tableau aide alimentaire" />
+            <div class="stat-content">
+              <span class="stat-number">20%</span>
+              <p>Des étudiants ont déjà eu recours à l'aide alimentaire (Cop1/IFOP)</p>
+            </div>
+          </div>
+          <div class="stat-card" data-aos="fade-up">
+            <img src="asset/image/femme qui cuisine.png" alt="Étudiante qui cuisine" />
+            <div class="stat-content">
+              <span class="stat-number">62%</span>
+              <p>Des étudiants sautent régulièrement des repas selon la FAGE</p>
+            </div>
+          </div>
+          <div class="stat-card" data-aos="fade-up">
+            <img src="asset/image/Précarité étudiante en 2023.png" alt="Précarité étudiante" />
+            <div class="stat-content">
+              <span class="stat-number">1/5</span>
+              <p>Étudiant en situation de précarité alimentaire</p>
+            </div>
+          </div>
         </div>
-        <div class="content-box">
-          <img src="asset/image/femme qui cuisine.png" alt="Étudiante qui cuisine" class="img-medium" />
-          <p>62 % des étudiants sautent régulièrement des repas : un constat alarmant selon la FAGE.</p>
-          <img src="asset/image/Précarité étudiante en 2023.png" alt="Précarité étudiante" class="img-medium" />
-          <p>La précarité alimentaire concerne actuellement un étudiant sur cinq, qui ne dispose pas toujours des ressources nécessaires pour assurer une alimentation suffisante au quotidien.</p>
-        </div>
-      </article>
+      </section>
 
       <section id="persona">
         <h2 class="rock-salt-regular">Persona</h2>
-        <div class="persona">
-          <img src="asset/image/telephone persona.png" alt="Photo persona Kobee" id="kobetel" />
-          <div id="cards">
-            <div class="persona-card">
-              <h3 class="title">Profil</h3>
-              <ul>
-                <li>Kobee</li>
-                <li>20 ans</li>
-                <li>Étudiant en 2e année de licence cybersécurité</li>
-                <li>Habite à Paris</li>
-                <li>Budget limité à 700€</li>
-                <li>Célibataire, sans enfant</li>
-              </ul>
-            </div>
-
-            <div class="persona-card">
-              <h3>Objectif</h3>
+        <div class="persona-container">
+          <div class="persona-profile" data-aos="fade-right">
+            
+            <h3>Kobee</h3>
+            <p>20 ans - Paris</p>
+            <img src="asset/image/persona.png" alt="Photo persona Kobee" />
+            <span class="persona-tag">Étudiant L2 Cybersécurité</span>
+          </div>
+          <div class="persona-details">
+            <div class="persona-card" data-aos="fade-left">
+              <h4>Objectifs</h4>
               <ul>
                 <li>Mieux s'alimenter et apprendre à cuisiner</li>
                 <li>Maintenir son physique</li>
                 <li>Apprendre à mieux gérer son budget</li>
-                <li>Stage dans la cybersécurité</li>
               </ul>
             </div>
-
-            <div class="persona-card">
-              <h3>Mode de vie</h3>
+            <div class="persona-card" data-aos="fade-left">
+              <h4>Mode de vie</h4>
               <ul>
-                <li>Vit tout seul</li>
-                <li>Prend les transports en commun et les vélos</li>
-                <li>Sportif</li>
+                <li>Vit seul en appartement</li>
+                <li>Transports en commun et vélo</li>
+                <li>Sportif régulier</li>
               </ul>
             </div>
-
-            <div class="persona-card">
-              <h3>Budget mensuel</h3>
-              <ul>
-                <li>Logement : 425 €</li>
-                <li>Courses : 150 €</li>
-                <li>Transports : 75 €</li>
-                <li>Imprévu : 50 €</li>
-              </ul>
+            <div class="persona-card" data-aos="fade-left">
+              <h4>Budget mensuel : 700€</h4>
+              <div class="budget-breakdown">
+                <div class="budget-item"><span>Logement</span><span>425€</span></div>
+                <div class="budget-item"><span>Courses</span><span>150€</span></div>
+                <div class="budget-item"><span>Transports</span><span>75€</span></div>
+                <div class="budget-item"><span>Imprévu</span><span>50€</span></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section id="evolution">
-        <h1>Évolution de l'app</h1>
-        <div id="container">
-          <div class="card-container">
-            <img src="asset/image/Z.png" alt="Wireframe" class="img-large" />
-            <div class="sous-card-container">
-              <h3>ETAPE 1</h3>
-              <p>Wireframe</p>
-            </div>
+        <h2 class="rock-salt-regular">Évolution de l'app</h2>
+        <div class="evolution-timeline">
+          <div class="evolution-step" data-aos="fade-up">
+            <div class="step-number">1</div>
+            <img src="asset/image/Z.png" alt="Wireframe" />
+            <h4>Wireframe</h4>
+            <p>Structuration des écrans et des flux utilisateur</p>
           </div>
-          <div class="card-container">
-            <img src="asset/image/ZZ.png" alt="Mid Fidelity" class="img-large" />
-            <div class="sous-card-container">
-              <h3>ETAPE 2</h3>
-              <p>Mid Fidelity</p>
-            </div>
+          <div class="evolution-step" data-aos="fade-up">
+            <div class="step-number">2</div>
+            <img src="asset/image/ZZ.png" alt="Mid Fidelity" />
+            <h4>Mid Fidelity</h4>
+            <p>Ajout des éléments visuels et interactions</p>
           </div>
-          <div class="card-container">
-            <img src="asset/image/ZZZ.png" alt="High Fidelity" class="img-large" />
-            <div class="sous-card-container">
-              <h3>ETAPE 3</h3>
-              <p>High Fidelity</p>
-            </div>
+          <div class="evolution-step" data-aos="fade-up">
+            <div class="step-number">3</div>
+            <img src="asset/image/ZZZ.png" alt="High Fidelity" />
+            <h4>High Fidelity</h4>
+            <p>Design final avec charte graphique complète</p>
           </div>
         </div>
       </section>
 
       <section id="avenir">
-        <h1>L'avenir de l'app</h1>
-        <div id="vb">
+        <h2 class="rock-salt-regular">L'avenir de l'app</h2>
+        <div class="avenir-content" data-aos="fade-up">
           <p>Nous souhaitons à l'avenir lancer un prototype plus travaillé pour l'avenir de l'application. De nouvelles fonctionnalités exclusives arrivent bientôt sur l'application !</p>
           <p>Mais aussi un développement à l'international est dans notre projet !</p>
         </div>
-        <div id="bougez">Contactez-Nous :</div>
-        <ul>
-          <li class="contact-item">checkine.coulibaly@latoile.em-lyon.com</li>
-          <li class="contact-item">david.silvateixeira@latoile.em-lyon.com</li>
-          <li class="contact-item">kassir.moussa@latoile.em-lyon.com</li>
-          <li class="contact-item">lamine.diakhaby@latoile.em-lyon.com</li>
-        </ul>
+      </section>
+
+      <section id="team">
+        <h2 class="rock-salt-regular">L'équipe</h2>
+        <div class="team-grid">
+          <div class="team-card" data-aos="fade-up">
+            <div class="team-img-placeholder">
+              <img src="asset/image/checkine.svg" alt="">
+            </div>
+            <h4>Checkine Coulibaly</h4>
+            <p>checkine.coulibaly@latoile.em-lyon.com</p>
+          </div>
+          <div class="team-card" data-aos="fade-up">
+            <div class="team-img-placeholder">
+              <img src="asset/image/david.svg" alt="">
+            </div>
+            <h4>David Silva Teixeira</h4>
+            <p>david.silvateixeira@latoile.em-lyon.com</p>
+          </div>
+          <div class="team-card" data-aos="fade-up">
+            <div class="team-img-placeholder">
+              <img src="asset/image/lamine.svg" alt="">
+            </div>
+            <h4>Lamine Diakhaby</h4>
+            <p>lamine.diakhaby@latoile.em-lyon.com</p>
+          </div>
+          <div class="team-card" data-aos="fade-up">
+            <div class="team-img-placeholder">
+              <img src="asset/image/kassir.svg" alt="">
+            </div>
+            <h4>Kassir Moussa</h4>
+            <p>kassir.moussa@latoile.em-lyon.com</p>
+          </div>
+          
+        </div>
       </section>
     </main>
 <footer>
@@ -175,5 +208,6 @@
       <p class="copyright">&copy; 2024 Graille. Tous droits réservés.</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

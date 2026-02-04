@@ -8,141 +8,328 @@
    Header
    =========================================== */
 header {
-  height: auto;
+  height: calc(100dvh - 160px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px 40px;
+  padding: 0 0 60px;
   background-color: var(--color-primary);
 }
 
+header h1 {
+  margin-bottom: 0;
+}
+
 header img {
-  margin: 15px;
-  max-width: 55%;
   height: auto;
 }
 
-#imgH {
-  padding: 3%;
+/* ===========================================
+   Main
+   =========================================== */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main section {
+  padding: 60px 40px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--color-primary);
+  font-family: var(--font-cursive);
 }
 
 /* ===========================================
-   Article - Structuration
+   Section - Why (Stats)
    =========================================== */
-#structuration {
-  display: flex;
-  padding: 2%;
+#why {
+  background-color: var(--color-white);
 }
 
-.content-box {
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-card {
   display: flex;
   flex-direction: column;
-  padding: 3%;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.img-medium {
-  width: 500px;
-  height: 300px;
-  border: 5px solid var(--color-black);
-  border-radius: 5%;
+.stat-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.stat-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.stat-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 /* ===========================================
    Section - Persona
    =========================================== */
 #persona {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   background-color: var(--color-primary);
-  padding: 2vw;
 }
 
-#persona img {
-  height: 80vh;
-  width: 35vw;
-  object-fit: contain;
+#persona h2 {
+  color: var(--color-black);
 }
 
-#kobetel {
-  padding: 0;
-  height: 250px;
-  width: 250px;
-}
-
-.persona {
+.persona-container {
   display: flex;
-  width: 90vw;
-  justify-content: center;
-  gap: 2vw;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
 }
 
-.persona-card {
+.persona-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20vw;
-  height: fit-content;
-  background-color: var(--color-bg-card);
-  border-radius: var(--radius-md);
-  padding: 2vw;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  min-width: 280px;
 }
 
-#cards {
+.persona-profile img {
+  width: 180px;
+  object-fit: contain;
+}
+
+.persona-profile h3 {
+  margin: 0 0 5px;
+  font-size: 1.5rem;
+}
+
+.persona-profile p {
+  margin: 0 0 15px;
+  color: #666;
+}
+
+.persona-tag {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.persona-details {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  gap: 16px;
-  width: fit-content;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.persona-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 25px;
+}
+
+.persona-card h4 {
+  margin: 0 0 15px;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.persona-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.persona-card li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.persona-card li::before {
+  content: "•";
+  color: var(--color-primary);
+  position: absolute;
+  left: 0;
+}
+
+.budget-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.budget-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.budget-item:last-child {
+  border-bottom: none;
 }
 
 /* ===========================================
    Section - Evolution
    =========================================== */
-#container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 2%;
+#evolution {
+  background-color: var(--color-white);
 }
 
-.card-container {
+.evolution-timeline {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  padding: 3%;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.sous-card-container {
+.evolution-step {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 6%;
+  text-align: center;
+  flex: 1;
+  max-width: 350px;
 }
 
-.img-large {
-  width: 400px;
-  height: 400px;
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.evolution-step img {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+}
+
+.evolution-step h4 {
+  margin: 0 0 10px;
+  color: var(--color-primary);
+  font-size: 1.2rem;
+}
+
+.evolution-step p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
 }
 
 /* ===========================================
    Section - Avenir
    =========================================== */
-#vb {
-  padding: 2%;
+#avenir {
+  background-color: var(--color-white);
+  text-align: center;
 }
 
-#bougez {
-  display: flex;
-  justify-content: center;
+.avenir-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.contact-item {
+.avenir-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ===========================================
+   Section - Team
+   =========================================== */
+#team {
+  background-color: var(--color-primary);
+}
+
+#team h2 {
+  color: var(--color-black);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  padding: 1%;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.team-img-placeholder {
+  width: 120px;
+  height: 120px;
+}
+
+.team-card h4 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.team-card p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #666;
+  word-break: break-all;
+}
+
+footer{
+  background: var(--color-primary);
+  color: var(--color-black);
+}
+
+footer h4{
+  color: var(--color-black);
 }
