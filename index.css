@@ -1,63 +1,40 @@
-body{
-      height: 100%;
-    width: 100%;
+/* ===========================================
+   INDEX.CSS - Styles spécifiques à la page d'accueil
+   =========================================== */
+
+/* Variables locales */
+:root {
+  --color-primary: #64A225;
+  --color-accent: #ff3d2e;
+  --color-accent-dark: #c91f1f;
+  --color-bg-light: #fbf2e7;
+  --radius-lg: 28px;
 }
 
+/* ===========================================
+   Base Elements
+   =========================================== */
+body {
+  height: 100%;
+  width: 100%;
+}
 
 h2 {
+  font-size: 2rem;
   text-align: center;
-  margin-top: 30px;
-  font-size: 2rem; 
+  margin: 0;
 }
 
 p {
-  font-size: 1rem; 
+  font-size: 1rem;
   color: black;
   text-align: center;
 }
-
 
 img {
   display: block;
   height: auto;
 }
-
-
-
-header {
-  height: 70vh;
-  display: flex;
-  justify-content: center;  align-items: center;
-  gap: 2vw;
-}
-
-header img{
-  height: 45vh;
-}
-
-header div{
-  margin-left: -10vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-main {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
-
-#profil{
-  height: 80vh;
-}
-
-section {
-  margin: 0;     
-}
-
 
 ul {
   display: flex;
@@ -67,35 +44,108 @@ ul {
   padding: 0;
 }
 
-
-
-footer {
-  text-align: center;
-  width: 100%;   
-  margin: 0;  
+/* ===========================================
+   Navigation (override style.css)
+   =========================================== */
+nav {
+  background: transparent;
 }
 
-footer ul {
+nav h1 {
+  opacity: 0;
+}
+
+/* ===========================================
+   Header
+   =========================================== */
+header {
+  position: relative;
+  height: calc(100dvh - 120px);
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 2vw;
+  padding: 0 32px;
 }
 
-footer img {
-  width: 50px;
-  height: 50px;
+header h1 {
+  position: absolute;
+  left: 7%;
+  top: -10%;
+  color: var(--color-primary);
+  font-size: 6vw;
+  transform: rotate(-15deg) translateY(-5%);
 }
 
-.Télécharger {
-  width: 100px;
+header p {
+  font-size: 1.5em;
 }
 
-footer p {
-  font-size: 1.5rem; 
+header img {
+  width: 40vw;
+  transform: translateY(-10%);
+  object-fit: contain;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 1em;
+}
+
+.header__buttons img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.img-bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.bloc-text {
+  width: 50%;
+  text-align: center;
+}
+
+/* ===========================================
+   Main
+   =========================================== */
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* ===========================================
+   Sections (common)
+   =========================================== */
+section {
+  height: 90vh;
+  margin: 0;
+  padding: 32px;
+  background-color: var(--color-primary);
+}
+
+section h2 {
+  font-family: "Rock Salt", cursive;
 }
 
 section ul {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
 
 section ul li {
@@ -105,7 +155,7 @@ section ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #64A225;
+  background-color: var(--color-primary);
   color: white;
 }
 
@@ -114,18 +164,9 @@ section ul li img {
   height: 30px;
 }
 
-.Rejoignez {
-  font-size: 1.3rem;
-}
-
-header{
-  background-color: #64A225;
-}
-
-footer{
-  background-color: #64A225;
-}
-
+/* ===========================================
+   Content Sections (profil, budget, plats, liste)
+   =========================================== */
 #profil,
 #budget,
 #plats,
@@ -134,104 +175,149 @@ footer{
   align-items: center;
   justify-content: center;
   gap: 4vw;
-  padding: 40px 0;
 }
+
+#profil {
+  height: 80vh;
+}
+
 #profil p,
 #budget p,
 #plats p,
 #listedecourse p,
 #qrcode p {
-  max-width: 35%;
-  font-size: 1rem;
-  line-height: 1.6;
-  text-align: left;
   font-size: 1.3rem;
+  line-height: 1.6;
+  text-align: center;
 }
+
 #profil img,
 #budget img,
 #plats img,
-#listedecourse img{
+#listedecourse img {
   margin: 0;
   width: 50vw;
   object-fit: contain;
 }
 
-#profil img{
+#profil img {
   height: 100%;
 }
 
+/* Alternate row direction */
 #budget,
-#listedecourse{
-  background-color: #64A225;
+#listedecourse {
+  flex-direction: row-reverse;
 }
 
-#qrcode{
+/* White background sections */
+#budget,
+#listedecourse,
+#benefices {
+  background-color: #fff;
+}
+
+/* ===========================================
+   QR Code Section
+   =========================================== */
+#qrcode {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: fit-content;
 }
 
-#qrcode div{
+#qrcode div {
   display: flex;
   flex-direction: row;
-  height: fit-content;
   justify-content: space-around;
-    align-items: center;
+  align-items: center;
+  height: fit-content;
 }
 
-#qrcode img{
+#qrcode img {
   height: 70vh;
 }
 
-#communaute{
-  height: 50vh;
+/* ===========================================
+   Reviews Section
+   =========================================== */
+.avis-section {
+  background: var(--color-bg-light);
+  padding: 60px;
+}
+
+.avis-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.avis-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 28px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
-#communaute img{
-  width: 20vw;
+.stars {
+  color: var(--color-accent);
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 
-#telechargement{
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  background-color: #64A225;
-  align-items: center;
-  padding: 2vw;
-  
+.avis-text {
+  color: var(--color-accent-dark);
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-#telechargement h2{
-    margin: 0 auto;
+.avis-author {
+  margin-top: 24px;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  align-self: flex-end;
 }
 
-.telechargement{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
-  gap: 15vw;
-  margin-top: 6vh;
+/* ===========================================
+   Video Card
+   =========================================== */
+.video-card {
+  position: relative;
+  background: #000;
+  border-radius: var(--radius-lg);
+  height: 100%;
+  min-height: 420px;
+  color: #fff;
 }
 
-#telechargement .images{
-  display: flex;
-  flex-direction: column;
-  gap: 1vw;
+.play-btn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
 }
 
-#communaute{
-  background-color: #ED5F11;
+.video-user {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: 600;
 }
-#budget{
-   display: flex;
-   flex-direction: row-reverse;
+.tailleimgavis{
+  height: 100%;
+  border-radius: 5%;
 }
-#listedecourse{
-   display: flex;
-   flex-direction: row-reverse;
+.tailleimgavis1{
+  height: 76%;
+  width: 70%;
+  border-radius: 5%;
 }

@@ -6,78 +6,179 @@
     <title>Projet - Page d'accueil</title>
     <link href="style.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
   <body>
-      <nav>
-        <h1 class="rock-salt-regular">GRAILLE</h1>
-        <div class="links">
+    <nav>
+      <h1 class="rock-salt-regular">GRAILLE</h1>
+      <div class="links">
         <a href="doc.html">Documentation</a> |
-        <a href="https://www.figma.com/design/aS03V80XanrHFPKpmo7pBV/P3----Groupe-4?node-id=3502-2&t=xBHD1sesFCC6l26U-1"   class="bouton">Télécharger</a>
-        </div>
-      </nav>
+        <a href="https://www.figma.com/design/aS03V80XanrHFPKpmo7pBV/P3----Groupe-4?node-id=3502-2&t=xBHD1sesFCC6l26U-1" class="bouton">Télécharger</a>
+      </div>
+    </nav>
+
     <header>
-        <img src="asset/image/Group 39486.png" alt="Présentation de l'application Graille" >
-        <div>
+      <h1 class="rock-salt-regular">GRAILLE</h1>
+      <div class="bloc-text">
         <h2>On mange quoi cette semaine ?</h2>
         <p>Graille bien pour 3 fois rien !</p>
-        <a href="#" class="bouton">Découvrir</a>
+        <div class="header__buttons">
+          <a href="https://www.apple.com/fr/app-store/" target="_blank" rel="noopener noreferrer">
+            <img src="asset/image/image 17.png" alt="App store" />
+          </a>
+          <a href="https://play.google.com/store/games?gl=FR" target="_blank" rel="noopener noreferrer">
+            <img src="asset/image/image 19.png" alt="Google store" />
+          </a>
         </div>
+      </div>
+      <div class="img-bloc">
+        <img src="asset/image/image d'accueil.png" alt="Présentation de l'application Graille" />
+      </div>
     </header>
+
     <main>
-        <section id="profil">
-          <p>Lors de votre première utilisation de l’application, nous vous invitons à créer votre compte afin de personnaliser votre expérience, de sauvegarder vos préférences et d’accéder à l’ensemble des fonctionnalités proposées par l’application.</p>
-          <img src="asset/image/telephone persona.png">
-        </section>
-        <section id="budget">
-        <p>Indiquez le budget dont vous disposez afin que l’application puisse vous proposer des solutions adaptées ; ce budget reste entièrement modifiable à tout moment selon vos besoins.</p>
-        <img src="asset/image/budget.png">
-        </section>
-        <section id="plats">
-        <p>L’application vous propose des plats rapides et faciles à réaliser, en fonction des aliments que vous appréciez, accompagnés d’une recette pour chaque plat.</p>
-        <img src="asset/image/image plat et recette.png" alt="Augmentation du coût de la vie étudiante" >
-        </section>
-        <section id="listedecourse">
-        <p>Après avoir sélectionné vos plats pour la semaine, l’application génère automatiquement une liste de courses à prix réduit ; il ne vous reste plus qu’à la valider</p>
-        <img src="asset/image/bonne liste de course.png" >
+      <section id="benefices">
+        <div class="container-benefices">
+          <div class="box-container-benefices">
+            <div class="box-benefices box-benef-1">
+              <img src="asset/image/Gestion financière et épargne.png" alt="Gain de temps" />
+              <div class="text-benefices">
+                <h4>Gain de temps</h4>
+                <p>Gagnez un temps précieux grâce à l'intelligence artificielle, permet donc de créer des repas rapides et faciles.</p>
+              </div>
+            </div>
+            <div class="box-benefices box-benef-2">
+              <img src="asset/image/Gestion financière et épargne.png" alt="Économies" />
+              <div class="text-benefices">
+                <h4>Économies</h4>
+                <p>c'est la même qualité ces justes le prix qui baisse .</p>
+              </div>
+            </div>
+            <div class="box-benefices-2 box-benef-3">
+              <img src="asset/image/Gestion financière et épargne.png" alt="Plats équilibrés" />
+              <div class="text-benefices">
+                <h4>Plats équilibrés</h4>
+                <p>Les plats les plus sains avec un equilibre parfait qui s'adaptent avec chacun de nos utilisateur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <section id="profil">
+        <div class="bloc-text">
+          <h2>#1 Création de votre compte</h2>
+          <p>Lors de votre première utilisation de l'application, nous vous invitons à créer votre compte afin de personnaliser votre expérience, de sauvegarder vos préférences et d'accéder à l'ensemble des fonctionnalités proposées par l'application.</p>
+        </div>
+        <img data-aos="fade-left" src="asset/image/telephone persona.png" alt="Création de compte" />
+      </section>
+
+      <section id="budget">
+        <div class="bloc-text">
+          <h2>#2 Définition de votre budget</h2>
+          <p>Indiquez le budget dont vous disposez afin que l'application puisse vous proposer des solutions adaptées ; ce budget reste entièrement modifiable à tout moment selon vos besoins.</p>
+        </div>
+        <img data-aos="fade-right" src="asset/image/budget.png" alt="Définition du budget" />
+      </section>
+
+      <section id="plats">
+        <div class="bloc-text">
+          <h2>#3 Plats personnalisés</h2>
+          <p>L'application vous propose des plats rapides et faciles à réaliser, en fonction des aliments que vous appréciez, accompagnés d'une recette pour chaque plat.</p>
+        </div>
+        <img data-aos="fade-left" src="asset/image/image plat et recette.png" alt="Plats personnalisés" />
+      </section>
+
+      <section id="listedecourse">
+        <div class="bloc-text">
+          <h2>#4 Liste de courses automatique</h2>
+          <p>Après avoir sélectionné vos plats pour la semaine, l'application génère automatiquement une liste de courses à prix réduit ; il ne vous reste plus qu'à la valider</p>
+        </div>
+        <img data-aos="fade-right" src="asset/image/bonne liste de course.png" alt="Liste de courses" />
+      </section>
+
       <section id="qrcode">
-        <h2>Comment ça marche ?</h2>
-        <div>
-        <p>C’est fait ! Votre panier est prêt. Tout ce qu’il faut pour vos recettes,
-          sans payer plus cher qu’en magasin et il vous suffit ensuite de scanner le QR code lors de votre passage en magasin.</p>
-        <img src="asset/image/BONQRCODE.png" >
+        <div class="bloc-text">
+          <h2>#5 Point de relais</h2>
         </div>
-    </section>
-      <section id="communaute">
-        <h2 class="Rejoignez">Rejoignez une communauté de 1 million d’utilisateurs comblés</h2 >
-        <p>
-          “Meilleure appli pour bien gérer le budget courses, manger équilibré et varié !” — Kobee D.
-        </p>
-        <img src="asset/image/Star rating.png" alt="Note 5 étoiles" />
-        <p>“Application incontournable pour optimiser son budget courses.” — Dominique D.</p>
+        <img data-aos="fade-up" src="asset/image/BONQRCODE.png" alt="QR Code" />
+        <div class="bloc-text">
+          <p>C'est fait ! Votre panier est prêt. Tout ce qu'il faut pour vos recettes, sans payer plus cher qu'en magasin et il vous suffit ensuite de scanner le QR code lors de votre passage en magasin.</p>
+        </div>
       </section>
-      <section id="telechargement">
-        <h2>Téléchargez votre allié du quotidien</h2>
-        <div class="telechargement">
-        <p>GRAILLE réinvente vos repas de la semaine… et les courses qui vont avec.</p>
-        <div class="images">
-        <img src="asset/image/image 17.png" alt="Télécharger sur App Store" class="Télécharger" />
-        <img src="asset/image/image 19.png" alt="Télécharger sur Google Play" class="Télécharger"/>
-        </div>
+
+      <section class="avis-section">
+        <div class="avis-grid">
+          <div class="avis-card">
+            <div class="stars">★★★★★</div>
+            <p class="avis-text">" Cela va faire 5 mois que j'utilise l'application et j'en suis ravie ! Économie flagrante sur le budget courses, menus nombreux et simples."</p>
+            <span class="avis-author">- Kobee D.</span>
+          </div>
+
+          <div class="video-card">
+            <img src="asset/image/avis 1.png" alt="" class="tailleimgavis1">
+            <div class="play-btn">▶</div>
+            <span class="video-user">@CR75000</span>
+          </div>
+
+          <div class="avis-card">
+            <div class="stars">★★★★★</div>
+            <p class="avis-text">"Graille est une petite révolution dans ma vie : économies d'énergie, de temps, d'argent et en plus on mange mieux !"</p>
+            <span class="avis-author">— Céline M.</span>
+          </div>
+          <div class="video-card">
+            <img src="asset/image/AVIS2.png" alt="" class="tailleimgavis">
+            <div class="play-btn">▶</div>
+            <span class="video-user">@k91800</span>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <ul>
-        <li><img src="asset/image/Facebook.png" alt="Facebook"></li>
-        <li><img src="asset/image/cbb30cb3a5d3c001c8e8836c761934a0.jpg" alt="Snapchat"></li>
-        <li><img src="asset/image/stickers-logo-vectoriel-tiktok-noir-et-blanc.jpg.jpg" alt="TikTok"></li>
-        <li><img src="asset/image/Instagram.png" alt="Instagram"></li>
-        <li><img src="asset/image/Youtube.png" alt="YouTube"></li>
-      </ul>
-
-      <p>Merci et bon appétit</p>
+      <h4>Graille</h4>
+      <nav class="social-links" aria-label="Réseaux sociaux">
+        <ul>
+          <li>
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Snapchat">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.076-.375-.09-.84-.181-1.441-.181-.453 0-.915.045-1.38.149-.899.195-1.665.705-2.564 1.305-.855.586-1.86 1.379-3.369 1.379-.06 0-.12 0-.181-.015h-.12c-1.509 0-2.498-.793-3.369-1.379-.884-.6-1.665-1.11-2.564-1.305-.465-.104-.927-.149-1.38-.149-.604 0-1.066.091-1.441.181-.224.045-.404.076-.539.076-.24 0-.419-.119-.554-.405-.061-.193-.09-.374-.135-.553-.045-.196-.105-.479-.165-.57-1.873-.283-2.905-.702-3.145-1.271-.03-.075-.045-.149-.045-.225-.015-.24.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.659-1.332-.809-.135-.045-.255-.091-.345-.12-.869-.33-1.258-.72-1.228-1.168 0-.36.284-.689.734-.838.149-.06.344-.09.508-.09.12 0 .284.015.435.091.406.18.764.286 1.065.3.179 0 .314-.044.389-.089-.007-.166-.018-.331-.03-.51l-.002-.042c-.106-1.645-.231-3.671.298-4.865C7.86 1.069 11.216.793 12.206.793z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="TikTok">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2024 Graille. Tous droits réservés.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
